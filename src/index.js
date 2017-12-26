@@ -4,7 +4,7 @@ const ms = require('ms')
 const twitter = require('./twitter')
 const soundcloud = require('./soundcloud')
 
-const error = err => console.error(err)
+const error = err => console.error(new Date().toISOString(), err)
 const log = (...args) => console.log(new Date().toISOString(), ...args)
 
 let tracks = []
